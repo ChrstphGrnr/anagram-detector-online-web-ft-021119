@@ -11,6 +11,7 @@ attr_accessor :word
       if words.chars.sort_by(&:downcase).join == @word.chars.sort_by(&:downcase)
         match_arr << words
       end
-      match_arr
     end
+    match_arr
+  end
 end
