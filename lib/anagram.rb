@@ -8,7 +8,7 @@ attr_accessor :word
   def match(annagrams)
     match_arr = []
     annagrams.each do |words|
-      if words.chars.sort_by(&:downcase).join == @word.chars.sort_by(&:downcase).join
+      if words.chars.sort.join == @word.chars.sort.join
         match_arr << words
       end
     end
